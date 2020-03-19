@@ -24,10 +24,10 @@ namespace fo2_config
 
             PlaceLink(this, "fodev.net", "https://fodev.net", this.Width-80, 7).Anchor = (AnchorStyles.Top | AnchorStyles.Right);
 
-            ddraw.Parse(@"E:\Fallout\fo2\Fallout1in2\ddraw.ini");
+            ddraw.Parse(@"ddraw.ini");
             ddraw.redrawCallback = () => DrawSelectedCategory(ddraw, DDrawTabControl);
 
-            f2_res.Parse(@"E:\Fallout\fo2\Fallout1in2\f2_res.ini");
+            f2_res.Parse(@"f2_res.ini");
             f2_res.redrawCallback = () => DrawSelectedCategory(f2_res, F2ResTabControl);
 
             this.RenderTabContent();
